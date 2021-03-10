@@ -1,0 +1,6 @@
+**/.vs
+**/.vscode
+**/publish
+**/logs
+bin/
+obj/

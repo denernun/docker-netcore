@@ -1,0 +1,15 @@
+version: '3.8'
+networks:
+  network_zeus:
+    name: zeus
+    driver: bridge
+services:
+  zeus:
+    build: .
+    hostname: zeus
+    container_name: zeus
+    tty: true
+    ports:
+      - 5000:80
+    networks:
+      - network_zeus
